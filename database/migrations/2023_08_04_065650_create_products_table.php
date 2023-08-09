@@ -36,7 +36,7 @@ class CreateProductsTable extends Migration
 
     /**
      * Reverse the migrations.
-     *
+     * this is for testing
      * @return void
      */
     public function down()
