@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->unsignedBigInteger('category_id');
             $table->string('name');
             $table->string('slug');
-            $table->string('brand')->nullable();
+            $table->string('brand');
             $table->mediumText('samll_description')->nullable();
             $table->longText('description')->nullable();
             $table->integer('orignal_price');
@@ -36,7 +36,7 @@ class CreateProductsTable extends Migration
 
     /**
      * Reverse the migrations.
-     * this is for testing
+     
      * @return void
      */
     public function down()
@@ -44,3 +44,4 @@ class CreateProductsTable extends Migration
         Schema::dropIfExists('products');
     }
 }
+// this command will reset your last commit
