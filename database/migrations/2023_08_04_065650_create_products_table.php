@@ -44,4 +44,3 @@ class CreateProductsTable extends Migration
         Schema::dropIfExists('products');
     }
 }
-// this command will reset your last commit
